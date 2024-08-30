@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề 3</title>
+    <style>
+        h2{
+            margin-left: 150px;
+            font-size: 35pt;
+            margin-bottom: 10px;
+        }
+        form>input{
+            margin-left: 150px;
+            width: 300px;
+            height: 30px;
+            margin-bottom: 15px;
+        }
+        form>select{
+            margin-left: 150px;
+            width: 308px;
+            height: 35px;
+            margin-bottom: 15px;
+        }
+        form>label>input{
+            margin-left: 150px;
+            margin-bottom: 15px;
+        }
+        form>button{
+            margin-left: 150px;
+            margin-bottom: 50px;
+            width: 308px;
+            height: 35px;
+            background: #237FC1;
+            font-size: 18pt;
+            color: white;
+        }
+        table{
+            width: 100%;
+            border: 1px solid;
+            font-size: 20pt;
+            border-collapse: collapse;
+
+        }
+        td,th{
+            border: 1px solid;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Đăng kí tour</h2>
+    <form action="">
+        <input type="text" placeholder="Tên tour" id="nametour"><br>
+        <input type="text" placeholder="Mã tour" id="codetour"><br>
+        <select name="" id="int" aria-placeholder="Đơn vị tổ chức">
+            <option value="" hidden>Đơn vị tổ chức</option>
+            <option value="0">Đơn vị 1</option>
+            <option value="1">Đơn vị 2</option>
+        </select><br>
+        <label id="sex"><input type="radio" name="gender" id="M">Nam
+        <input type="radio" name="gender" id="F">Nữ</label>
+        <br>
+        <input type="text" placeholder="Số người đi cùng" id="user"><br>
+        <button id="btn">Đăng ký</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Tên tour</th>
+                <th>Mã tour</th>
+                <th>Đơn vị tổ chức</th>
+                <th>Giới tính</th>
+                <th>Số người đi cùng</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            height: 100px;
+
+        }
+        input{
+            margin: 10px;
+            width: 40%;
+            padding: 15px;
+        }
+        select{
+            margin: 10px;
+            width: 41.7%;
+            padding: 15px;
+        }
+        button{
+            margin: 10px;
+            width: 41.7%;
+            padding: 15px;
+            background-color: rgb(43, 43, 222);
+            color:white;
+            font-size: 20px;
+        }
+        
+        
+    </style>
+</head>
+<body onload="luuThongTin()">
+    <h1>Thêm mới Username</h1>
+    <form action="">
+        <div> <!--div1-->
+           
+            <input type="text" placeholder="Username" id="user">
+        </div>
+        <span id="check1"></span>
+
+        <div><!--div2-->
+            <input type="text" placeholder="Password" id="pass" value="">
+        </div>
+        <span id="check2"></span>
+
+        <div> <!--div3-->
+            <input type="text" placeholder="Re-password" id="re_pass">
+        </div>
+        <span id="check3"></span>
+
+        <div><!--div4-->
+            <input type="text" placeholder="Email" id="email">
+        </div>
+        <span id="check4"></span>
+
+        <div> <!--div5-->
+            <select name="" id="status">
+                <option value="">Tình trạng</option>
+                <option value="1">Hoạt động</option>
+                <option value="2">Ngừng hoạt động</option>
+            </select>
+        </div>
+        <span id="check5"></span>
+
+        <br>
+        <br>
+        <br>
+    </form>
+    <button id="btn" onclick={Add()}>Thêm mới</button>
+   
+    <br>
+        <table border="1" id="table" >
+            
+        </table>
+    
+    <script src="main.js">
+        
+    </script>
+</body>
+</html>

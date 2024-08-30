@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 lab 6</title>
+    <style>
+        img{
+            width: 900px;
+            height: 650px;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="loadAnh();">
+    <img onmouseover="hieuung()" onmouseout="xoaHieuUng()" src="./img/0.webp" alt="" id="anh" width="1000px">
+    <hr>
+    <button onclick="first()">First</button>
+    <button onclick="prev()">Prev</button>
+    <button onclick="next()">Next</button>
+    <button onclick="last()">Last</button>
+    <script src="./JS/js3.js"></script>
+</body>
+</html>

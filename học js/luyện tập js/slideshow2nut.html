@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Slideshow</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <div class="numberText">1 / 3</div>
+        <img src="./dethithu2_js/img/bien1.jpg" style="width: 30%" />
+      </div>
+      <div class="mySlides">
+        <div class="numberText">2 / 3</div>
+        <img src="./dethithu2_js/img/bien2.jpg" style="width: 30%" />
+      </div>
+      <div class="mySlides">
+        <div class="numberText">3 / 3</div>
+        <img src="./dethithu2_js/img/bien3.jpg" style="width: 30%" />
+      </div>
+      <div class="mySlides">
+        <div class="numberText">4 / 3</div>
+        <img src="./dethithu2_js/img/bien4.jpg" style="width: 30%" />
+      </div>
+      <div class="mySlides">
+        <div class="numberText">5 / 3</div>
+        <img src="./dethithu2_js/img/bien5.jpg" style="width: 30%" />
+      </div>
+
+    </div>
+    <br />
+    <button onclick="plusSlides(-1)">Pre</button>
+    <button onclick="plusSlides(1)">Next</button>
+    <button onclick="showSlidesAuto(slideIndex+=1)">Auto</button>
+    <button onclick="clearTimeout()">Stop auto</button>
+    <script>
+      let slideIndex = 1;
+      showSlides(1);
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+      let myInterval;
+      // slide auto
+      function showSlidesAuto(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        // auto chay them code dong 66 67 68 69
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+        myInterval = setTimeout(showSlidesAuto, 2000); //2000 là thời gian chạy, ~ 2 giây
+      }
+      // stop auto slide
+      function clearTimeout() {
+        clearInterval(myInterval);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+C:\Users\admin\Desktop\Luyentap2\bin\Debug\netcoreapp3.1\Luyentap1.exe
+C:\Users\admin\Desktop\Luyentap2\bin\Debug\netcoreapp3.1\Luyentap1.deps.json
+C:\Users\admin\Desktop\Luyentap2\bin\Debug\netcoreapp3.1\Luyentap1.runtimeconfig.json
+C:\Users\admin\Desktop\Luyentap2\bin\Debug\netcoreapp3.1\Luyentap1.runtimeconfig.dev.json
+C:\Users\admin\Desktop\Luyentap2\bin\Debug\netcoreapp3.1\Luyentap1.dll
+C:\Users\admin\Desktop\Luyentap2\bin\Debug\netcoreapp3.1\Luyentap1.pdb
+C:\Users\admin\Desktop\Luyentap2\obj\Debug\netcoreapp3.1\Luyentap1.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\Luyentap2\obj\Debug\netcoreapp3.1\Luyentap1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\Luyentap2\obj\Debug\netcoreapp3.1\Luyentap1.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Luyentap2\obj\Debug\netcoreapp3.1\Luyentap1.AssemblyInfo.cs
+C:\Users\admin\Desktop\Luyentap2\obj\Debug\netcoreapp3.1\Luyentap1.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Luyentap2\obj\Debug\netcoreapp3.1\Luyentap1.dll
+C:\Users\admin\Desktop\Luyentap2\obj\Debug\netcoreapp3.1\Luyentap1.pdb
+C:\Users\admin\Desktop\Luyentap2\obj\Debug\netcoreapp3.1\Luyentap1.genruntimeconfig.cache

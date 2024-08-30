@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+        body{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        .form-control{
+            margin-bottom: 5px;
+        }
+        .in{
+            padding:10px 0;
+            padding-right: 50px;
+            border-radius: 5px ;
+        }
+        ::placeholder{
+            padding-left: 10px;
+        }
+        .tc{
+            display: flex;
+        }
+        .tt{
+            margin-left: 10px;
+            width: 150px;
+            border: 1px solid gray;
+            background-color: #E5E5E5;
+        }
+        a{
+            color: black;
+           text-decoration: none;
+
+        }
+    </style>
+</head>
+<body onload="reder()">
+    <form action="">
+        <div class="form-control">
+            <input class="in" value="" type="text" id="sigin" placeholder="Tên Người Nhận" >
+        </div>
+            <span id="thongbao"></span>
+        
+        <div class="form-control">
+            <input class="in" type="text" id="email" placeholder="Email">
+        </div>
+            <span id="thongbao1"></span>
+        
+        <div class="form-control">
+            <input class="in" type="text" id="sdt" placeholder="Số Điện Thoại">
+        </div> 
+            <span id="thongbao2"></span>
+        <div class="form-control">
+            <input class="in" type="text" id="dc" placeholder="Địa Chỉ Nhận Hàng">
+        </div> 
+            <span id="thongbao3"></span>
+    </form>
+        
+    
+       <div class="tc">
+             
+        <button onclick=" return them()" type="submit">Giao Hang</button>
+        <div class="tt">
+            
+            <a id="link" href="index.html"> Quay Về Trang Chủ</a>
+        </div>
+       </div>
+   
+        
+     
+    <script>
+        function them(){
+let sigin = document.getElementById("sigin").value;
+let email = document.getElementById('email').value;
+let sdt = document.getElementById('sdt').value;
+let dc = document.getElementById('dc').value;
+let links = document.getElementById('link')
+
+var sdtrege = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+var reg_mail = /^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/;
+if(sigin.length == 0){
+     
+     document.getElementById('thongbao').innerHTML = 'Vui Lòng Nhập Tên Người Nhận Hàng'
+     return false
+     
+ }
+ else{
+     document.getElementById('thongbao').innerHTML = '';
+ }
+ if(email.length == 0){
+    
+    document.getElementById('thongbao1').innerHTML = 'Vui Lòng Nhập Email'
+    return false
+} 
+if (reg_mail.test(email)){
+    document.getElementById('thongbao1').innerHTML = ''
+    
+}
+else{
+    
+    document.getElementById('thongbao1').innerHTML = 'Định Dạng Email Không Đúng'
+    return false
+
+}
+if(sdt.length == 0 ){
+    
+    document.getElementById('thongbao2').innerHTML = ' Vui Lòng Nhập Số Điện Thoại'
+    return false
+}
+if(sdtrege.test(sdt)== false){
+    document.getElementById('thongbao2').innerHTML = 'Định Dạng SDT Không Đúng'
+    return false
+}
+else{
+    document.getElementById('thongbao2').innerHTML = ''
+}
+if(dc.length == 0 ){
+    
+    document.getElementById('thongbao3').innerHTML = 'Vui Lòng Nhập DC Giao Hàng'
+    return false
+}
+
+else{
+    document.getElementById('thongbao3').innerHTML = ''
+}
+alert('Cảm ơn quý khách đã đặt hàng , đơn hàng quý khách sẽ tới trong 30p nữa')
+
+
+
+ 
+}
+
+
+
+    </script>
+</body>
+</html>

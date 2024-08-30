@@ -1,0 +1,170 @@
+.content{
+    display: flex;
+    width: 100%;
+}
+.news{
+    margin: 10px 0;
+    width: 33.333%;
+    transform: translate(-0,-0);
+    padding: 0 10px;
+}
+.news img{
+    width: 100%;
+    display: block;
+
+}
+.tile h1{
+       font-size: 50px;
+}
+.tile{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.trong{
+    background-color: papayawhip;
+}
+h1{
+    font-size: 20px; 
+    color:#FF3300;
+}
+h1:hover{
+    color: blueviolet;
+}
+.hover{
+    width: 70%;
+    position: absolute;
+    top:88%;
+    left: 5%;
+    transform: translate(-20%, -20%);
+    color: #FFCCFF;
+    /* padding: 0 10px; */
+    /* font-size: 20px; */
+}
+.hover p{
+    
+    font-size: 20px;
+}
+/* .overlay{
+    position: absolute;
+    top: 200px;
+    left:0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    background: rgba(209, 209, 245, 0.16);
+} */
+/* .news:hover .overlay{
+    opacity: 1;
+} */
+.content1{
+    width: 100%;
+    
+}
+.news1{
+    display: flex;
+}
+.news1 img{
+    width: 40%;
+    border-radius: 30%;
+    padding: 5px 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.news1 a{
+    padding: 30px 30px;
+    word-spacing: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+p{
+    color: rgb(236, 16, 53);
+}
+h3:hover{
+    text-decoration: underline;
+}
+p:hover{
+    color: rgb(97, 19, 224);
+}
+.dotted:hover{
+    border: #FF3300 5px dotted;
+    
+}
+.card{
+            
+    position: fixed;
+    height: 300px;
+    width: 500px;
+    right: 0;
+    top: 0;
+    background-color: darkgoldenrod;
+    padding: 12px 20px;
+    overflow-y: scroll;
+    right: -100%;
+}
+h2{
+    cursor: pointer;
+    position: absolute;
+    top: 395px;
+    left: 360px;
+    color: black;
+    font-size: 15px;
+    border: 1px solid gray;
+    background-color: bisque;
+}
+h2:hover{
+    color: #FF3300;
+}
+@-webkit-keyframes my {
+    0% { color: #F8CD0A; } 
+    50% { color: red;  } 
+    100% { color: #F8CD0A;  } 
+}
+@-moz-keyframes my { 
+    0% { color: #F8CD0A;  } 
+    50% { color: red;  }
+    100% { color: #F8CD0A;  } 
+}
+@-o-keyframes my { 
+    0% { color: #F8CD0A; } 
+    50% { color: red; } 
+    100% { color: #F8CD0A;  } 
+}
+@keyframes my { 
+    0% { color: #F8CD0A;  } 
+    50% { color: red;  }
+    100% { color: #F8CD0A;  } 
+} 
+#demo {
+        
+        font-size:24px;
+        font-weight:bold;
+    -webkit-animation: my 700ms infinite;
+    -moz-animation: my 700ms infinite; 
+    -o-animation: my 700ms infinite; 
+    animation: my 700ms infinite;
+}
+.carticon{
+    position: fixed;
+    
+    left: 1292px;
+    top: 10px;
+}
+.giohang{
+    padding: 6px;
+}
+.dong{
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+.giao{
+    background-color: crimson;
+    width: 80px;
+    border: 1px solid grey;
+    padding: 10px 0px;
+}
+.giao a{
+   
+   text-decoration: none; 
+}

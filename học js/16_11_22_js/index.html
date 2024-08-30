@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <!-- <button onclick="testsetTimeout()">testsetTimeout</button>
+    <button onclick="testsetInterval()">testsetInterval</button> -->
+    <!-- <script src="js.js">
+
+    </script> -->
+    <!-- <script>
+        function testsetTimeout(){
+            setTimeout("alert('Xin chào các bạn')", 2000);
+        }
+        function testsetInterval(){
+            setInterval("alert('Xin chào các bạn')", 2000);
+        }
+    </script> -->
+    <!-- <div id="home">
+        <div id="div1" class="class1">Đây là div 1</div>
+        <div id="div2" class="class1">Đây là div 2</div> 
+        <div id="div3" class="class3">Đây là div 3</div>
+    </div> -->
+    <!-- <div id="divanh"></div>
+    <button id="clickanh">Hiển thị ảnh 1</button>
+    <button onclick="hienthianh('cake2')">Hiển thị ảnh 2</button>
+    <button onclick="hienthianh('cake5')">Hiển thị ảnh 2</button>
+    <script>
+        function hienthianh(x){
+            var divanh = document.getElementById("divanh");
+            if(x=='cake2'){
+                divanh.innerHTML = "<img src = 'cake2.jpg' alt = '' width = '600px'>";
+            }else{
+                divanh.innerHTML = "<img src = 'cake5.jpg' alt = '' width = '600px'>";
+            }
+            // divanh.innerHTML = "<img src = 'cake2.jpg' alt = '' width = '600px'>";
+            // document.write("<img src = 'cake2.jpg' alt = '' width = '600px'>");
+        }document.getElementById("clickanh").onclick = hienthianh('cake5');
+
+    </script> -->
+    
+     <!-- <a href="https://caodang.fpt.edu.vn/tuyen-sinh-cao-dang-xet-tuyen" id="link">Link</a>
+     <script>
+        var nodelink = document.getElementById("Link");
+        alert(nodelink.href);
+     </script> -->
+     <!-- <div id="hoa">
+        <p>Hoa Hồng</p>
+        <p id="hoalan">Hoa Lan</p>
+        <p>Hoa Đào</p>
+     </div>
+     <script>
+        //Truy xuất giá trị node : nodeValue
+        var divhoa = document.getElementById("hoa");
+        var pHoaHong = divhoa.firstChild;
+        console.log(pHoaHong);
+        // alert(pHoaHong.nextSibling.childNodes[0].nodeValue);
+
+        //Tạo node: createElement
+        var newElement = document.createElement("p");
+        //Thêm node vào element: appendChild
+        divhoa.appendChild(newElement);
+        //Thêm textnode: createTextNode
+        var textnode = document.createTextNode("Hoa Mai");
+        newElement.appendChild(textnode);
+        //Xóa node: replaceChild
+        var hoalan = document.getElementById("hoalan");
+        divhoa.removeChild(hoalan);
+
+     </script> -->
+
+     <button onclick="checkthis(this)">Button</button>
+     <script>
+        function checkthis(x){
+            console.log(x);
+        }
+     </script>
+     <script src="./DOM.js"></script>
+</body>
+</html>

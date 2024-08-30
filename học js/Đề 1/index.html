@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn tập</title>
+    <style>
+        form {
+            position: absolute;
+            width: 900px;
+            height: 50px;
+            left: 67px;
+            top: 20px;
+            margin-bottom: 30px;
+            font-size: 20pt;
+        }
+
+        form>input {
+            font-size: 20pt;
+            width: 500px;
+            margin-bottom: 20px;
+            height: 50px;
+        }
+
+        h2 {
+            margin-left: 90px;
+        }
+
+        form>select {
+            height: 50px;
+            width: 510px;
+            margin-bottom: 20px;
+            font-size: 20pt;
+        }
+
+        form>button {
+            font-size: 20pt;
+            width: 512px;
+            background-color: brown;
+            height: 25px;
+            color: white;
+            height: 50px;
+        }
+
+        table {
+            border: 1px solid #000000;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 650px;
+        }
+
+       th, td {
+            height: 40px;
+            font-size: 20pt;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h2>Quản lý nhập kho</h2>
+        <input type="text" placeholder="Tên sản phẩm" id="ten"><br>
+        <input type="text" placeholder="Mã sản phẩm" id="ma"><br>
+        <select name="" placeholder="Nhà cung cấp" id="nha"><br>
+            <option value="" hidden>Nhà cung cấp</option>
+            <option value="0">Nhà cung cấp 1</option>
+            <option value="1">Nhà cung cấp 2</option>
+        </select><br>
+        <input type="number" placeholder="Số lượng" id="so"><br>
+        <input type="text" placeholder="Giá tiền" id="gia"><br>
+        <select name="" placeholder="Tình trạng" id="tinh"><br>
+            <option value="" hidden>Tình trạng</option>
+            <option value="0">Còn hàng</option>
+            <option value="1">Hết hàng</option>
+        </select><br>
+        <button id="btn">Thêm mới</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Mã sản phẩm</th>
+                <th>Nhà cung cấp</th>
+                <th>Số lượng</th>
+                <th>Giá tiền</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

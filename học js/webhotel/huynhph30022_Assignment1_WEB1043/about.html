@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (max-width:  860px)"
+      href="css/mobile.css"
+    />
+    <title>FLAMINGO DAI LAI RESORT</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <h1 id="logo">FLAMINGO</h1>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html" class="current">Đặt phòng</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section id="about">
+          <div id="about-content">
+            <h2>
+              <strong class="primary-text">FLAMINGO</strong> Đại Lải Resort
+            </h2>
+            <p>"Tôn vinh gìn giữ quà tặng của thiên nhiên"</p>
+            <p>
+              Trong mỗi bước hoạt động, Flamingo Group đều mang trong mình sự
+              trân trọng các giá trị môi trường, cảnh quan, thiên nhiên và luôn
+              tâm niệm giá trị cốt lõi này
+            </p>
+          </div>
+          <img src="./img/photo-2.jpg" />
+        </section>
+      </div>
+      <section id="guests-say">
+        <div class="container">
+          <h3>ĐẶT PHÒNG </h3><h4>KHÁCH SẠN</h4>
+          <div class="guest-comment">
+            <div class="datphong">
+              <form action="">
+                <div class="from-goupper">
+                  <label>Họ tên :</label>
+                  <input type="text" id="name" class="input">
+                </div>
+
+                <div class="from-goupper">
+                  <label>Chứng minh thư :</label>
+                  <input type="text" id="cmt" />
+                </div>
+
+                <div class="from-goupper">
+                  <label>Giới tính</label>
+                  <input type="radio" id="gioiTinh" /> Nam
+                  <input type="radio" id="gioiTinh" /> Nữ
+                </div>
+
+                <div class="from-goupper">
+                  <label>Số điện thoại :</label>
+                  <input type="radio" id="soDienThoai" /> Nam
+                </div>
+
+                <div class="from-goupper">
+                  <label>Chọn phòng :</label>
+                  <select id="chonPhong">
+                    <option value="Phong1">Phòng 1</option>
+                    <option value="Phong2">Phòng 2</option>
+                    <option value="Phong3">Phòng 3</option>
+                  </select>
+                </div>
+
+                <div class="from-goupper">
+                  <label>Ngày đến :</label>
+                  <input type="date" />
+                </div>
+
+                <div class="from-goupper">
+                  <label>Ngày đi :</label>
+                  <input type="date" />
+                </div>
+
+                <div class="from-goupper">
+                  <label>Hình thức thanh toán :</label>
+                  <select id="hinhThucThanhToan">
+                    <option value="ChuyenKhoan">Chuyển khoản</option>
+                    <option value="tienMat">Tiền mặt</option>
+                  </select>
+                </div>
+
+                <div class="from-goupper-button">
+                  <button type="submid">Đặt phòng</button>
+                  <button type="reset">Reset</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>FLAMINGO © 2022, All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

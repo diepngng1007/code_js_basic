@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="alert('Đây là nút bấm 1')">Nút bấm 1</button>
+    <input type="submit" value="Nút bấm 2" onclick="confirm('Lêu lêu')"> -->
+    <button onclick="hienthianh('game')">Game</button>
+    <button onclick="hienthianh('bóng đá')">Bóng đá</button>
+    <script>
+        function hienthianh(hinhanh){
+            if(hinhanh=="game"){
+                document.write("<img src= 'Hinh-nen-game-1.jpg' alt='game' style='width:300px;'>");
+                document.write("<div style='marding-top:5x;'>");
+                document.write("<button onclick='tailaitrang();'>Tải lại trang</button></div>");
+            }else{
+                document.write("<img src='b.jpg' alt='bóng đá' style='width:300px;'>");
+                document.write("<div style='marding-top:5px;'>");
+                document.write("<button onclick='tailaitrang();'>Tải lại trang</button></div>");
+        }
+        }
+        function tailaitrang(){
+            location.reload();
+        }
+       
+        
+    </script>
+    <script src="./today.js">
+
+    </script>
+</body>
+</html>
